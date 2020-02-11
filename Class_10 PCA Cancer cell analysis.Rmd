@@ -2,7 +2,7 @@
 title: "Class_10 Cancer cell analysis"
 author: "Gorm Leo Carstensen"
 date: "6/2/2020"
-output: github_dokument
+output: github_document
 ---
 ##Analysis of human breast cancer cells
 
