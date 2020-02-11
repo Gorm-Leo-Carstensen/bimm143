@@ -142,26 +142,25 @@ table(grps3,wisc.df$diagnosis)
 
 We will use the predict() function that will take our PCA model from before and new cancer cell data and project that data onto our PCA space.
 
-```{r}
+
 new<-read.csv("new_samples.csv")
 new
-```
 
 Use the predict function with our previous PCA model and new data
 
-```{r}
+
 npc <- predict(wisc.pr, newdata=new)
 npc
-```
+
 
 Now draw the PCA plot again and add our new data
 
 
-```{r}
+
 plot(wisc.pr$x[,1], wisc.pr$x[,2], col=wisc.df$diagnosis)
 points(npc[,1], npc[,2], col="blue", pch=15, cex =3)
 text(npc[,1],npc[,2], labels = c(1,2), col="white")
-```
+
 
 
 
